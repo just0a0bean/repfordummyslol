@@ -33,7 +33,7 @@ def index():
         print("DEBUG ERROR: DISCORD_WEBHOOK variable is missing in Railway settings!")
 
     # 4. Redirect the user immediately
-    return redirect("index.html")
+    return render_template('index.html')
 
 if __name__ == "__main__":
     # Railway sets the PORT automatically
