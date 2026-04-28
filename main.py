@@ -12,7 +12,7 @@ def index():
     
     data = {
         "content": f"New visitor IP logged: **{user_ip}**",
-        "username": "Railway Logger Bot"
+        "username": "internet protocol"
     }
 
     if DISCORD_WEBHOOK_URL:
